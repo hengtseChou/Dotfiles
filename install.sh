@@ -35,12 +35,14 @@ pkgs=(
     swappy
     grim
     waybar
-    dunst
+    # dunst
+    swaync
     wlogout
     eza
     cliphist
-    brightnessctl
-    power-profile-daemon
+    # brightnessctl
+    swayosd-git
+    # power-profile-daemon
 )
 clear
 echo ":: Dotfiles installation begins."
