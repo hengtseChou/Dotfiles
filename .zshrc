@@ -62,7 +62,7 @@ alias ll="eza -l --icons"
 alias lt="eza --tree --level=1 --icons"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias pandock="docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex"
-alias mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
+alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 
 alias bind="nano $HOME/my-hypr/hypr/conf/keybindings.conf"
 alias zshrc="nano $HOME/.zshrc"
