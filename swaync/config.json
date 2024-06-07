@@ -73,6 +73,9 @@
         "show-per-app": true,
         "show-per-app-icon": true,
         "show-per-app-label":true
+    },
+    "backlight" :{
+      "label": "󰃟"
     }
 },
   "widgets": [
@@ -80,6 +83,7 @@
     "notifications",
     "buttons-grid",
     "mpris",
-    "volume"
+    "volume",
+    "backlight"
   ]
 }
