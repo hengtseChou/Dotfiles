@@ -29,7 +29,7 @@
     }
   },
   "custom/updates": {
-    "format": "  {}",
+    "format": "   {}",
     "tooltip-format": "{}",
     "escape": true,
     "return-type": "json",
@@ -71,12 +71,11 @@
   },
   "network": {
     "format": "{ifname}",
-    "format-wifi": "  {essid}",
-    "format-ethernet": "  {ifname}",
+    "format-wifi": "    {essid}",
+    "format-ethernet": "󰈀   {ifname}",
     "format-disconnected": "Disconnected",
-    "tooltip-format": " {ifname} via {gwaddri}",
-    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-    "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-wifi": "    {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "󰈀  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
     "tooltip-format-disconnected": "Disconnected",
     "max-length": 50,
     "on-click": "alacritty --class floating -e nmtui connect"
@@ -88,9 +87,9 @@
       "critical": 15
     },
     "interval": 5,
-    "format": "{icon} {capacity}%",
-    "format-charging": "  {capacity}%",
-    "format-plugged": " {capacity}%",
+    "format": "{icon}  {capacity}%",
+    "format-charging": "  {capacity}%",
+    "format-plugged": "  {capacity}%",
     "format-icons": [" ", " ", " ", " ", " "]
   },
   "idle_inhibitor": {
@@ -104,6 +103,6 @@
   },
   "tray": {
     "icon-size": 20,
-    "spacing": 15
+    "spacing": 13
   }
 }

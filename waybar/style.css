@@ -23,9 +23,10 @@
  * ----------------------------------------------------- */
 
 * {
-  font-family: "Fira Sans SemiBold", "Font Awesome 6 Free",
+  font-family: "Fira Sans", "FiraCode Nerd Font",
     "Noto Sans CJK TC Bold", sans-serif;
   border: none;
+  font-weight: bold;
   border-radius: 0px;
 }
 
@@ -239,30 +240,36 @@ window#waybar.empty #window {
 
 #custom-system,
 #idle_inhibitor,
-#custom-exit {
+#custom-exit,
+#tray {
   padding: 0px;
-  margin-left: 0px;
   margin-right: 15px;
   font-size: 20px;
   opacity: 0.8;
+  font-weight: normal;
   color: @iconcolor;
 }
 
 #custom-system {
-  font-weight: bold;
   font-size: 22px;
 }
 
 #idle_inhibitor {
-  font-weight: bold;
+  margin-right: 19px;
 }
 
 #idle_inhibitor.activated {
-  font-weight: bold;
   color: #dc2f2f;
 }
 
 #custom-exit {
+  margin-right: 20px;
+}
+
+ #tray {
+  padding: 0px;
+  margin-right: 14px;
+  color: @backgroundlight;
 }
 
 /* -----------------------------------------------------
@@ -275,18 +282,6 @@ window#waybar.empty #window {
   font-size: 16px;
   color: @iconcolor;
 }
-
-/* -----------------------------------------------------
- * Tray
- * ----------------------------------------------------- */
-
-#tray {
-  padding: 0px 15px 0px 0px;
-  color: @backgroundlight;
-}
-
-
-
 /* -----------------------------------------------------
  * Clock
  * ----------------------------------------------------- */
