@@ -9,28 +9,36 @@
 # by Stephan Raabe (2023) 
 # ----------------------------------------------------- 
 
-DIR="$HOME/Pictures/screenshots/"
-NAME="screenshot_$(date +%d%m%Y_%H%M%S).png"
+DIR="$HOME/Pictures/Screenshots/"
+NAME="Screenshot from $(date "+%Y-%m-%d %H-%M-%S").png"
 
-option2="Selected area"
+option1="Selected area"
+option2="Fullscreen"
 option3="Fullscreen (delay 3 sec)"
 
-options="$option2\n$option3"
+options="$option1\n$option2\n$option3"
 
-choice=$(echo -e "$options" | rofi -dmenu -replace -config $HOME/my-hypr/rofi/config-screenshot.rasi -i -no-show-icons -l 2 -width 30 -p "Take Screenshot")
+choice=$(echo -e "$options" | rofi -dmenu -replace -config $HOME/my-hypr/rofi/config-screenshot.rasi -i -no-show-icons -l 3 -width 30 -p "Take Screenshot")
 
 case $choice in
-    $option2)
+	$option1)
         grim -g "$(slurp)" "$DIR$NAME"
         xclip -selection clipboard -t image/png -i "$DIR$NAME"
-        notify-send "Screenshot created and copied to clipboard" "Mode: Selected area"
+        notify-send "Screenshot created and copied to clipboard" "Mode: $option1"
+        swappy -f "$DIR$NAME"
+    ;;
+    $option2)
+    		sleep 0.5
+        grim "$DIR$NAME" 
+        xclip -selection clipboard -t image/png -i "$DIR$NAME"
+        notify-send "Screenshot created and copied to clipboard" "Mode: $option2"
         swappy -f "$DIR$NAME"
     ;;
     $option3)
         sleep 3
         grim "$DIR$NAME" 
         xclip -selection clipboard -t image/png -i "$DIR$NAME"
-        notify-send "Screenshot created and copied to clipboard" "Mode: Fullscreen"
+        notify-send "Screenshot created and copied to clipboard" "Mode: $option3"
         swappy -f "$DIR$NAME"
     ;;
 esac
