@@ -23,10 +23,8 @@
  * ----------------------------------------------------- */
 
 * {
-  font-family: "Fira Sans", "FiraCode Nerd Font",
-    "Noto Sans CJK TC Bold", sans-serif;
+  font-family: "Fira Sans Semibold", "FiraCode Nerd Font", "Noto Sans CJK TC Bold", sans-serif;
   border: none;
-  font-weight: bold;
   border-radius: 0px;
 }
 

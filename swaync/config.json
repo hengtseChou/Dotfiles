@@ -80,9 +80,9 @@
 },
   "widgets": [
     "title",
+    "mpris",
     "notifications",
     "buttons-grid",
-    "mpris",
     "volume",
     "backlight"
   ]
