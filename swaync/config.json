@@ -48,7 +48,7 @@
         {
           "active":false,
           "command":"wlogout",
-          "label":"",
+          "label":"󰍃",
           "type": "button"
         },
         {
