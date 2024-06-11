@@ -65,6 +65,7 @@ _installSymLink $HOME/.config/xsettingsd $HOME/my-hypr/gtk/xsettingsd $HOME/.con
 _installSymLink $HOME/.gtkrc-2.0 $HOME/my-hypr/gtk/.gtkrc-2.0 $HOME
 _installSymLink $HOME/.Xresources $HOME/my-hypr/gtk/.Xresources $HOME
 _installSymLink $HOME/.zshrc $HOME/my-hypr/.zshrc $HOME
+_installSymLink $HOME/.config/swaync $HOME/my-hypr/swaync $HOME/.config
 
 echo ":: Setting up GTK ..."
 source ./hypr/scripts/gtk.sh > /dev/null
