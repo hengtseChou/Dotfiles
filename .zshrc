@@ -12,9 +12,9 @@ export PATH="/usr/lib/ccache/bin/:$PATH"
 export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH="$HOME/go/bin:$PATH"
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
+export PATH="$HOME/.pyenv/bin:$PATH"
 
 # -----------------------------------------------------
 # ZSH
@@ -91,3 +91,10 @@ eval "$(zoxide init zsh)"
 # -----------------------------------------------------
 
 eval "$(pyenv init -)"
+export PY3_10="$PYENV_ROOT/versions/3.10.12/bin/python3.10"
+
+# -----------------------------------------------------
+# MISCS
+# -----------------------------------------------------
+
+setopt no_nomatch
