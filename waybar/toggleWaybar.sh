@@ -1,6 +1,6 @@
 #!/bin/bash
 if [ -z $(pidof waybar) ]; then
-	waybar -c ~/my-hypr/waybar/config -s ~/my-hypr/waybar/style.css &
+	waybar -c ~/dotfiles/waybar/config -s ~/dotfiles/waybar/style.css &
 else
 	killall waybar
 	pkill waybar

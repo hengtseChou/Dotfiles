@@ -23,8 +23,8 @@ if [[ ! " ${supported_formats[@]} " =~ " $extension " ]]; then
     exit 1
 fi
 
-hypr="$HOME/my-hypr/hypr"
-wallpaper_dir="$HOME/my-hypr/wallpapers"
+hypr="$HOME/dotfiles/hypr"
+wallpaper_dir="$HOME/dotfiles/wallpapers"
 current_wallpaper="$wallpaper_dir/current_wallpaper.$extension"
 
 cp -f "$file_path" "$wallpaper_dir/$filename"

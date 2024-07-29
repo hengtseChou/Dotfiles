@@ -28,16 +28,16 @@ configuration {
 }
 
 /* ---- Load font ---- */
-@import "~/my-hypr/rofi/rofi-font.rasi"
+@import "~/dotfiles/rofi/rofi-font.rasi"
 
 /* ---- Load pywal colors (custom wal template) ---- */
-@import "~/my-hypr/.color/colors-rofi-pywal"
+@import "~/dotfiles/.color/colors-rofi-pywal"
 
 /* ---- Load wallpaper ---- */
-* { current-image: url("/home/hank/my-hypr/wallpapers/blurred_wallpaper.png", height); }
+* { current-image: url("/home/hank/dotfiles/wallpapers/blurred_wallpaper.png", height); }
 
 /* ---- Load border width ---- */
-@import "~/my-hypr/rofi/rofi-border.rasi"
+@import "~/dotfiles/rofi/rofi-border.rasi"
 
 /* ---- Window ---- */
 window {

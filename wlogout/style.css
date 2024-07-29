@@ -13,7 +13,7 @@ by Stephan Raabe (2023)
 /* -----------------------------------------------------
  * Import Pywal colors 
  * ----------------------------------------------------- */
-@import '../../my-hypr/.color/colors-wlogout.css';
+@import '../../dotfiles/.color/colors-wlogout.css';
 
 /* -----------------------------------------------------
  * General 
@@ -27,7 +27,7 @@ by Stephan Raabe (2023)
 }
 
 window {
-	background: url("../../my-hypr/wallpapers/blurred_wallpaper.png");
+	background: url("../../dotfiles/wallpapers/blurred_wallpaper.png");
 	background-size: cover;
 }
 

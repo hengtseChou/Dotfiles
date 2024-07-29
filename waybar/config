@@ -6,7 +6,7 @@
     "margin-right": 0,
     "spacing": 0,
     "include": [
-        "$HOME/my-hypr/waybar/modules.json"
+        "$HOME/dotfiles/waybar/modules.json"
     ],
     "modules-left": [
         "wlr/taskbar",

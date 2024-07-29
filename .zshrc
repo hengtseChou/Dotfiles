@@ -70,7 +70,7 @@ alias cleanup="sudo pacman -Rns $(pacman -Qtdq);yay -Scc"
 # PYWAL
 # -----------------------------------------------------
 
-cat $HOME/my-hypr/.color/sequences
+cat $HOME/dotfiles/.color/sequences
 
 # -----------------------------------------------------
 # STARSHIP

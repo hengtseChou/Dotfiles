@@ -4,7 +4,7 @@ if [ "$action" == "get" ]; then
 	notify-send "power-profiles-daemon" "current active: $(powerprofilesctl get)"
 elif [ "$action" == "set" ]; then
 	options="performance\nbalanced\npower-saver"
-	choice=$(echo -e "$options" | rofi -dmenu -replace -config $HOME/my-hypr/rofi/config-screenshot.rasi -i -no-show-icons -l 3 -width 30 -p "Select Power Profile")
+	choice=$(echo -e "$options" | rofi -dmenu -replace -config $HOME/dotfiles/rofi/config-screenshot.rasi -i -no-show-icons -l 3 -width 30 -p "Select Power Profile")
 	if [ ! -z "$choice" ]; then
 		powerprofilesctl set $choice
 	fi

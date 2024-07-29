@@ -48,25 +48,25 @@ echo ":: Checking required packages..."
 sleep 0.5
 yay -S --needed "${pkgs[@]}"
 
-config=$config
-my_hypr=$HOME/my-hypr
+config=$HOME/.config
+dotfiles=$HOME/dotfiles
 
-_installSymLink $config/alacritty $my_hypr/alacritty $config
-_installSymLink $config/dunst $my_hypr/dunst $config
-_installSymLink $config/hypr $my_hypr/hypr $config
-_installSymLink $config/htop $my_hypr/htop $config
-_installSymLink $config/rofi $my_hypr/rofi $config
-_installSymLink $config/swappy $my_hypr/swappy $config
-_installSymLink $config/waybar $my_hypr/waybar $config
-_installSymLink $config/wlogout $my_hypr/wlogout $config
-_installSymLink $config/starship.toml $my_hypr/starship/starship.toml $config
-_installSymLink $config/gtk-3.0 $my_hypr/gtk/gtk-3.0 $config
-_installSymLink $config/gtk-4.0 $my_hypr/gtk/gtk-4.0 $config
-_installSymLink $config/xsettingsd $my_hypr/gtk/xsettingsd $config
-_installSymLink $HOME/.gtkrc-2.0 $my_hypr/gtk/.gtkrc-2.0 $HOME
-_installSymLink $HOME/.Xresources $my_hypr/gtk/.Xresources $HOME
-_installSymLink $HOME/.zshrc $my_hypr/.zshrc $HOME
-_installSymLink $config/swaync $my_hypr/swaync $config
+_installSymLink $config/alacritty $dotfiles/alacritty $config
+_installSymLink $config/dunst $dotfiles/dunst $config
+_installSymLink $config/hypr $dotfiles/hypr $config
+_installSymLink $config/htop $dotfiles/htop $config
+_installSymLink $config/rofi $dotfiles/rofi $config
+_installSymLink $config/swappy $dotfiles/swappy $config
+_installSymLink $config/waybar $dotfiles/waybar $config
+_installSymLink $config/wlogout $dotfiles/wlogout $config
+_installSymLink $config/starship.toml $dotfiles/starship/starship.toml $config
+_installSymLink $config/gtk-3.0 $dotfiles/gtk/gtk-3.0 $config
+_installSymLink $config/gtk-4.0 $dotfiles/gtk/gtk-4.0 $config
+_installSymLink $config/xsettingsd $dotfiles/gtk/xsettingsd $config
+_installSymLink $HOME/.gtkrc-2.0 $dotfiles/gtk/.gtkrc-2.0 $HOME
+_installSymLink $HOME/.Xresources $dotfiles/gtk/.Xresources $HOME
+_installSymLink $HOME/.zshrc $dotfiles/.zshrc $HOME
+_installSymLink $config/swaync $dotfiles/swaync $config
 
 echo ":: Setting up GTK ..."
 source ./hypr/scripts/reload-gtk.sh >/dev/null
