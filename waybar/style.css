@@ -23,7 +23,8 @@
  * ----------------------------------------------------- */
 
 * {
-  font-family: "Fira Sans Semibold", "FiraCode Nerd Font", "Noto Sans CJK TC Bold", sans-serif;
+  font-family: "Fira Sans Semibold", "FiraCode Nerd Font",
+    "Noto Sans CJK TC Bold", sans-serif;
   border: none;
   border-radius: 0px;
 }
@@ -264,7 +265,7 @@ window#waybar.empty #window {
   margin-right: 20px;
 }
 
- #tray {
+#tray {
   padding: 0px;
   margin-right: 14px;
   color: @backgroundlight;

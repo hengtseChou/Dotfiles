@@ -23,7 +23,8 @@ if [[ ! " ${supported_formats[@]} " =~ " $extension " ]]; then
     exit 1
 fi
 
-wallpaper_dir=$HOME/my-hypr/wallpapers
+hypr="$HOME/my-hypr/hypr"
+wallpaper_dir="$HOME/my-hypr/wallpapers"
 current_wallpaper="$wallpaper_dir/current_wallpaper.$extension"
 
 cp -f "$file_path" "$wallpaper_dir/$filename"
@@ -34,10 +35,9 @@ magick "$current_wallpaper" -resize 75% "$wallpaper_dir/blurred_wallpaper.png"
 magick "$current_wallpaper" -blur 50x30 "$wallpaper_dir/blurred_wallpaper.png"
 echo ":: Setting up hyprpaper config..."
 killall hyprpaper
-wal_tpl=$(cat $HOME/my-hypr/hypr/hyprpaper.tpl)
+wal_tpl=$(cat $hypr/hyprpaper.tpl)
 output=${wal_tpl//WALLPAPER/$current_wallpaper}
-echo "$output" > $HOME/my-hypr/hypr/hyprpaper.conf
-hyprpaper &> /dev/null &
+echo "$output" >$hypr/hyprpaper.conf
+hyprpaper &>/dev/null &
 disown
 echo ":: Done"
-

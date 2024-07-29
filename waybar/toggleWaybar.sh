@@ -5,5 +5,3 @@ else
 	killall waybar
 	pkill waybar
 fi
-
-

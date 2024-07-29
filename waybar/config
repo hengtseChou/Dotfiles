@@ -1,34 +1,28 @@
 {
-  // General Settings
-  "layer": "top",
-  "margin-top": 0,
-  "margin-bottom": 0,
-  "layer": "top",
-  "margin-left": 0,
-  "margin-right": 0,
-  "spacing": 0,
-
-  // Load Modules
-  "include": ["~/my-hypr/waybar/modules.json"],
-
-  // Modules Left
-  "modules-left": ["wlr/taskbar", "hyprland/window"],
-
-  // Modules Center
-  "modules-center": ["hyprland/workspaces"],
-
-  // Modules Right
-  "modules-right": [
-    "custom/updates",
-    // "pulseaudio",
-    "battery",
-    "network",
-    "group/hardware",
-    // "custom/cliphist",
-    // "power-profiles-daemon",
-    "idle_inhibitor",
-    "tray",
-    "custom/exit",
-    "clock"
-  ]
+    "layer": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+    "include": [
+        "$HOME/my-hypr/waybar/modules.json"
+    ],
+    "modules-left": [
+        "wlr/taskbar",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "custom/updates",
+        "battery",
+        "network",
+        "group/hardware",
+        "idle_inhibitor",
+        "tray",
+        "custom/exit",
+        "clock"
+    ]
 }

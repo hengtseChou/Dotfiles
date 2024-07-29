@@ -8,8 +8,8 @@
   "control-center-margin-top": 20,
   "control-center-width": 500,
   "cssPriority": "application",
-  "control-center-positionX":"right",
-  "control-center-positionY":"center",
+  "control-center-positionX": "right",
+  "control-center-positionY": "center",
   "fit-to-screen": true,
   "hide-on-action": false,
   "hide-on-clear": true,
@@ -46,15 +46,15 @@
           "type": "button"
         },
         {
-          "active":false,
-          "command":"wlogout",
-          "label":"󰍃",
+          "active": false,
+          "command": "wlogout",
+          "label": "󰍃",
           "type": "button"
         },
         {
-          "active":false,
-          "command":"systemctl reboot",
-          "label":"",
+          "active": false,
+          "command": "systemctl reboot",
+          "label": "",
           "type": "button"
         }
       ]
@@ -66,18 +66,18 @@
     "title": {
       "text": "Notifications",
       "button-text": "󰎟  Clear",
-      "clear-all-button": true      
+      "clear-all-button": true
     },
     "volume": {
       "label": "",
-        "show-per-app": true,
-        "show-per-app-icon": true,
-        "show-per-app-label":true
+      "show-per-app": true,
+      "show-per-app-icon": true,
+      "show-per-app-label": true
     },
-    "backlight" :{
+    "backlight": {
       "label": "󰃟"
     }
-},
+  },
   "widgets": [
     "title",
     "mpris",

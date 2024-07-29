@@ -48,8 +48,7 @@ alias gd="git diff"
 # -----------------------------------------------------
 
 alias e="exit"
-alias c="clear"
-alias f="nohup nautilus $HOME/nthu-stat &> /dev/null & disown; exit"
+# alias f="nohup nautilus $HOME/nthu-stat &> /dev/null & disown; exit"
 alias search="s -p google"
 alias matrix="cmatrix"
 alias wifi="nmtui connect"
@@ -64,9 +63,8 @@ alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias pandock="docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex"
 alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 
-alias bind="nano $HOME/my-hypr/hypr/conf/keybindings.conf"
 alias zshrc="nano $HOME/.zshrc"
-alias cleanup="source $HOME/my-hypr/scripts/cleanup.sh"
+alias cleanup="sudo pacman -Rns $(pacman -Qtdq);yay -Scc"
 
 # -----------------------------------------------------
 # PYWAL
