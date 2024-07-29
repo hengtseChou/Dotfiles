@@ -24,6 +24,7 @@ _installSymLink() {
         echo ":: New symlink ${linksource} -> ${linktarget} created."
     fi
 }
+
 pkgs=(
     hyprland
     hyprlock
@@ -35,14 +36,11 @@ pkgs=(
     swappy
     grim
     waybar
-    # dunst
     swaync
     wlogout
     eza
     cliphist
-    # brightnessctl
     swayosd-git
-    # power-profile-daemon
 )
 clear
 echo ":: Dotfiles installation begins."
@@ -50,23 +48,26 @@ echo ":: Checking required packages..."
 sleep 0.5
 yay -S --needed "${pkgs[@]}"
 
-_installSymLink $HOME/.config/alacritty $HOME/my-hypr/alacritty $HOME/.config
-_installSymLink $HOME/.config/dunst $HOME/my-hypr/dunst $HOME/.config
-_installSymLink $HOME/.config/hypr $HOME/my-hypr/hypr $HOME/.config
-_installSymLink $HOME/.config/htop $HOME/my-hypr/htop $HOME/.config
-_installSymLink $HOME/.config/rofi $HOME/my-hypr/rofi $HOME/.config
-_installSymLink $HOME/.config/swappy $HOME/my-hypr/swappy $HOME/.config
-_installSymLink $HOME/.config/waybar $HOME/my-hypr/waybar $HOME/.config
-_installSymLink $HOME/.config/wlogout $HOME/my-hypr/wlogout $HOME/.config
-_installSymLink $HOME/.config/starship.toml $HOME/my-hypr/starship/starship.toml $HOME/.config
-_installSymLink $HOME/.config/gtk-3.0 $HOME/my-hypr/gtk/gtk-3.0 $HOME/.config
-_installSymLink $HOME/.config/gtk-4.0 $HOME/my-hypr/gtk/gtk-4.0 $HOME/.config
-_installSymLink $HOME/.config/xsettingsd $HOME/my-hypr/gtk/xsettingsd $HOME/.config
-_installSymLink $HOME/.gtkrc-2.0 $HOME/my-hypr/gtk/.gtkrc-2.0 $HOME
-_installSymLink $HOME/.Xresources $HOME/my-hypr/gtk/.Xresources $HOME
-_installSymLink $HOME/.zshrc $HOME/my-hypr/.zshrc $HOME
-_installSymLink $HOME/.config/swaync $HOME/my-hypr/swaync $HOME/.config
+config=$config
+my_hypr=$HOME/my-hypr
+
+_installSymLink $config/alacritty $my_hypr/alacritty $config
+_installSymLink $config/dunst $my_hypr/dunst $config
+_installSymLink $config/hypr $my_hypr/hypr $config
+_installSymLink $config/htop $my_hypr/htop $config
+_installSymLink $config/rofi $my_hypr/rofi $config
+_installSymLink $config/swappy $my_hypr/swappy $config
+_installSymLink $config/waybar $my_hypr/waybar $config
+_installSymLink $config/wlogout $my_hypr/wlogout $config
+_installSymLink $config/starship.toml $my_hypr/starship/starship.toml $config
+_installSymLink $config/gtk-3.0 $my_hypr/gtk/gtk-3.0 $config
+_installSymLink $config/gtk-4.0 $my_hypr/gtk/gtk-4.0 $config
+_installSymLink $config/xsettingsd $my_hypr/gtk/xsettingsd $config
+_installSymLink $HOME/.gtkrc-2.0 $my_hypr/gtk/.gtkrc-2.0 $HOME
+_installSymLink $HOME/.Xresources $my_hypr/gtk/.Xresources $HOME
+_installSymLink $HOME/.zshrc $my_hypr/.zshrc $HOME
+_installSymLink $config/swaync $my_hypr/swaync $config
 
 echo ":: Setting up GTK ..."
-source ./hypr/scripts/gtk.sh > /dev/null
+source ./hypr/scripts/reload-gtk.sh >/dev/null
 echo ":: Done."
