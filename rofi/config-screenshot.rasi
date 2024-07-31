@@ -12,7 +12,7 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "Fira Sans 11";
+    font:                       "FiraCode Nerd Font 12";
     show-icons:                 false;
     icon-theme:                 "kora";
     display-drun:               "APPS";
@@ -27,17 +27,14 @@ configuration {
     
 }
 
-/* ---- Load font ---- */
-@import "~/dotfiles/rofi/rofi-font.rasi"
-
 /* ---- Load pywal colors (custom wal template) ---- */
-@import "~/dotfiles/.color/colors-rofi-pywal"
+@import "~/Dotfiles/.color/colors-rofi-pywal"
 
 /* ---- Load wallpaper ---- */
-* { current-image: url("/home/hank/dotfiles/wallpapers/blurred_wallpaper.png", height); }
+* { current-image: url("/home/hank/Dotfiles/wallpapers/blurred_wallpaper.png", height); }
 
-/* ---- Load border width ---- */
-@import "~/dotfiles/rofi/rofi-border.rasi"
+/* ---- Border ---- */
+* { border-width: 3px; }
 
 /* ---- Window ---- */
 window {
