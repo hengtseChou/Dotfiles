@@ -49,7 +49,7 @@ sleep 0.5
 yay -S --needed "${pkgs[@]}"
 
 config=$HOME/.config
-dotfiles=$HOME/dotfiles
+dotfiles=$HOME/Dotfiles
 
 _installSymLink $config/alacritty $dotfiles/alacritty $config
 _installSymLink $config/dunst $dotfiles/dunst $config

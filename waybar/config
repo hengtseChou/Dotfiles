@@ -6,7 +6,7 @@
     "margin-right": 0,
     "spacing": 0,
     "include": [
-        "$HOME/dotfiles/waybar/modules.json"
+        "$HOME/Dotfiles/waybar/modules.json"
     ],
     "modules-left": [
         "wlr/taskbar",

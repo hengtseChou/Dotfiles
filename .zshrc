@@ -9,7 +9,7 @@
 # -----------------------------------------------------
 
 export PATH="/usr/lib/ccache/bin/:$PATH"
-export PATH="$HOME/bin:$PATH"
+export PATH="$HOME/scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -62,9 +62,7 @@ alias lt="eza --tree --level=1 --icons"
 alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
 alias pandock="docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex"
 alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
-
 alias zshrc="nano $HOME/.zshrc"
-alias cleanup="sudo pacman -Rns $(pacman -Qtdq);yay -Scc"
 
 # -----------------------------------------------------
 # PYWAL
@@ -89,7 +87,7 @@ eval "$(zoxide init zsh)"
 # -----------------------------------------------------
 
 eval "$(pyenv init -)"
-export PY3_10="$PYENV_ROOT/versions/3.10.12/bin/python3.10"
+export PY3_10="$HOME/.pyenv/versions/3.10.12/bin/python3.10"
 
 # -----------------------------------------------------
 # MISCS
