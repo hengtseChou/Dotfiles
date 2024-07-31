@@ -26,9 +26,9 @@
         "tooltip-format": "{}",
         "escape": true,
         "return-type": "json",
-        "exec": "$HOME/dotfiles/scripts/countupdates.sh",
+        "exec": "$HOME/Dotfiles/scripts/countupdates.sh",
         "restart-interval": 60,
-        "on-click": "alacritty --class floating -e $HOME/dotfiles/scripts/installupdates.sh",
+        "on-click": "alacritty --class floating -e $HOME/Dotfiles/scripts/installupdates.sh",
         "tooltip": false
     },
     "custom/exit": {

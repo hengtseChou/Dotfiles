@@ -9,11 +9,11 @@
 # -----------------------------------------------------
 
 export PATH="/usr/lib/ccache/bin/:$PATH"
-export PATH="$HOME/scripts:$PATH"
+export PATH="$HOME/Scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/go/bin:$PATH"
+export PATH="$HOME/Go/bin:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 
 # -----------------------------------------------------
@@ -68,7 +68,7 @@ alias zshrc="nano $HOME/.zshrc"
 # PYWAL
 # -----------------------------------------------------
 
-cat $HOME/dotfiles/.color/sequences
+cat $HOME/Dotfiles/.color/sequences
 
 # -----------------------------------------------------
 # STARSHIP
