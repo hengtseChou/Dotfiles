@@ -26,21 +26,23 @@ _installSymLink() {
 }
 
 pkgs=(
+    avizo
+    brightnessctl
+    cliphist
+    eza
+    grim
+    hypridle
     hyprland
     hyprlock
-    hypridle
     hyprpaper
-    xdg-desktop-portal-hyprland
+    pamixer
     rofi-wayland
     starship
     swappy
-    grim
-    waybar
     swaync
+    waybar
     wlogout
-    eza
-    cliphist
-    swayosd-git
+    xdg-desktop-portal-hyprland
 )
 clear
 echo ":: Dotfiles installation begins."
