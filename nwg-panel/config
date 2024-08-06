@@ -159,18 +159,10 @@
       "label-css-name": "",
       "interval": 1
     },
-    "button-sample": {
-      "command": "notify-send 'sample button'",
-      "icon": "view-grid",
-      "label": "",
-      "label-position": "right",
-      "css-name": "button-custom",
-      "icon-size": 16
-    },
     "menu-start": "off",
     "exclusive-zone": true,
     "sigrt": 64,
-    "use-sigrt": false,
+    "use-sigrt": true,
     "scratchpad": {},
     "sway-mode": {},
     "openweather": {},
@@ -218,7 +210,7 @@
     "executor-network": {
       "script": "/home/hank/Dotfiles/nwg-panel/wifi.sh",
       "tooltip-text": "",
-      "on-left-click": "alarcritty --class floating -e nmtui connect",
+      "on-left-click": "alacritty --class floating -e nmtui connect",
       "on-middle-click": "",
       "on-right-click": "",
       "on-scroll-up": "",
