@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 # Check if no arguments are provided
 if [ $# -eq 0 ]; then
     echo "Usage: $0 <file_path>"
@@ -23,10 +25,12 @@ if [[ ! " ${supported_formats[@]} " =~ " $extension " ]]; then
     exit 1
 fi
 
-hypr="$HOME/dotfiles/hypr"
-wallpaper_dir="$HOME/dotfiles/wallpapers"
+hypr="$HOME/Dotfiles/hypr"
+wallpaper_dir="$HOME/Dotfiles/wallpapers"
 current_wallpaper="$wallpaper_dir/current_wallpaper.$extension"
 
+# remove old wallpaper
+rm "$wallpaper_dir/current_wallpaper."*
 cp -f "$file_path" "$wallpaper_dir/$filename"
 cp -f "$wallpaper_dir/$filename" "$current_wallpaper"
 echo ":: Copied $PWD/$file_path to $wallpaper_dir"

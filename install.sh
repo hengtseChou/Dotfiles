@@ -26,7 +26,6 @@ _installSymLink() {
 }
 
 pkgs=(
-    avizo
     brightnessctl
     cliphist
     eza
@@ -35,6 +34,7 @@ pkgs=(
     hyprland
     hyprlock
     hyprpaper
+    nwg-panel
     pamixer
     rofi-wayland
     starship
@@ -42,6 +42,7 @@ pkgs=(
     swaync
     waybar
     wlogout
+    wob
     xdg-desktop-portal-hyprland
 )
 clear
@@ -54,12 +55,10 @@ config=$HOME/.config
 dotfiles=$HOME/Dotfiles
 
 _installSymLink $config/alacritty $dotfiles/alacritty $config
-_installSymLink $config/dunst $dotfiles/dunst $config
 _installSymLink $config/hypr $dotfiles/hypr $config
 _installSymLink $config/htop $dotfiles/htop $config
 _installSymLink $config/rofi $dotfiles/rofi $config
 _installSymLink $config/swappy $dotfiles/swappy $config
-_installSymLink $config/waybar $dotfiles/waybar $config
 _installSymLink $config/wlogout $dotfiles/wlogout $config
 _installSymLink $config/starship.toml $dotfiles/starship/starship.toml $config
 _installSymLink $config/gtk-3.0 $dotfiles/gtk/gtk-3.0 $config
@@ -69,6 +68,7 @@ _installSymLink $HOME/.gtkrc-2.0 $dotfiles/gtk/.gtkrc-2.0 $HOME
 _installSymLink $HOME/.Xresources $dotfiles/gtk/.Xresources $HOME
 _installSymLink $HOME/.zshrc $dotfiles/.zshrc $HOME
 _installSymLink $config/swaync $dotfiles/swaync $config
+_installSymLink $HOME/.config/nwg-panel/config $HOME/Dotfiles/nwg-panel/config $HOME/.config/nwg-panel
 
 echo ":: Setting up GTK ..."
 source ./hypr/scripts/reload-gtk.sh >/dev/null

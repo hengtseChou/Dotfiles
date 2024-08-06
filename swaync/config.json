@@ -26,8 +26,8 @@
   "positionY": "top",
   "script-fail-notify": true,
   "scripts": {},
-  "timeout": 10,
-  "timeout-critical": 0,
+  "timeout": 5,
+  "timeout-critical": 10,
   "timeout-low": 5,
   "transition-time": 100,
   "widget-config": {
