@@ -12,7 +12,7 @@
     "margin-bottom": 0,
     "padding-horizontal": 0,
     "padding-vertical": 0,
-    "spacing": 0,
+    "spacing": 3,
     "items-padding": 0,
     "icons": "light",
     "css-name": "panel-top",
@@ -24,6 +24,8 @@
     ],
     "modules-right": [
       "playerctl",
+      "executor-power-profile",
+      "executor-hypridle",
       "executor-network"
     ],
     "controls-settings": {
@@ -153,11 +155,14 @@
     "playerctl": {
       "buttons-position": "left",
       "icon-size": 16,
-      "chars": 30,
+      "chars": 20,
       "scroll": false,
       "button-css-name": "",
       "label-css-name": "",
-      "interval": 1
+      "interval": 1,
+      "show-cover": true,
+      "cover-size": 24,
+      "angle": 0.0
     },
     "menu-start": "off",
     "exclusive-zone": true,
@@ -219,7 +224,41 @@
       "css-name": "",
       "icon-placement": "left",
       "icon-size": 16,
-      "interval": 3,
+      "interval": 1,
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
+    },
+    "executor-power-profile": {
+      "script": "/home/hank/Dotfiles/nwg-panel/power-profile-daemon.sh",
+      "tooltip-text": "",
+      "on-left-click": "/home/hank/Dotfiles/hypr/scripts/powerprofiles.sh set",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
+      "angle": 0.0,
+      "sigrt": 34,
+      "use-sigrt": false
+    },
+    "executor-hypridle": {
+      "script": "/home/hank/Dotfiles/nwg-panel/hypridle.sh",
+      "tooltip-text": "",
+      "on-left-click": "/home/hank/Dotfiles/hypr/scripts/switch-hypridle.sh",
+      "on-middle-click": "",
+      "on-right-click": "",
+      "on-scroll-up": "",
+      "on-scroll-down": "",
+      "root-css-name": "",
+      "css-name": "",
+      "icon-placement": "left",
+      "icon-size": 16,
+      "interval": 1,
       "angle": 0.0,
       "sigrt": 34,
       "use-sigrt": false
