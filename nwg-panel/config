@@ -1,7 +1,7 @@
 [
   {
     "name": "panel-top",
-    "output": "",
+    "output": "All",
     "layer": "bottom",
     "position": "top",
     "controls": "right",
@@ -173,18 +173,30 @@
     "openweather": {},
     "brightness-slider": {},
     "dwl-tags": {},
-    "hyprland-taskbar": {},
+    "hyprland-taskbar": {
+      "name-max-len": 24,
+      "icon-size": 16,
+      "workspaces-spacing": 0,
+      "client-padding": 0,
+      "show-app-icon": true,
+      "show-app-name": true,
+      "show-app-name-special": false,
+      "show-layout": true,
+      "all-outputs": false,
+      "mark-xwayland": true,
+      "angle": 0.0
+    },
     "hyprland-workspaces": {
       "num-ws": 10,
       "show-icon": true,
       "image-size": 16,
       "show-name": true,
-      "name-length": 70,
+      "name-length": 50,
       "show-empty": false,
-      "mark-content": true,
-      "show-names": true,
-      "mark-floating": true,
-      "mark-xwayland": true,
+      "mark-content": false,
+      "show-names": false,
+      "mark-floating": false,
+      "mark-xwayland": false,
       "angle": 0.0
     },
     "start-hidden": false,
@@ -214,7 +226,7 @@
     },
     "executor-network": {
       "script": "/home/hank/Dotfiles/nwg-panel/wifi.sh",
-      "tooltip-text": "",
+      "tooltip-text": "nmtui connect",
       "on-left-click": "alacritty --class floating -e nmtui connect",
       "on-middle-click": "",
       "on-right-click": "",
@@ -231,7 +243,7 @@
     },
     "executor-power-profile": {
       "script": "/home/hank/Dotfiles/nwg-panel/power-profile-daemon.sh",
-      "tooltip-text": "",
+      "tooltip-text": "power-profile-daemon",
       "on-left-click": "/home/hank/Dotfiles/hypr/scripts/powerprofiles.sh set",
       "on-middle-click": "",
       "on-right-click": "",
@@ -248,7 +260,7 @@
     },
     "executor-hypridle": {
       "script": "/home/hank/Dotfiles/nwg-panel/hypridle.sh",
-      "tooltip-text": "",
+      "tooltip-text": "hypridle",
       "on-left-click": "/home/hank/Dotfiles/hypr/scripts/switch-hypridle.sh",
       "on-middle-click": "",
       "on-right-click": "",
