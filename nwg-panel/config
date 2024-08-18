@@ -23,7 +23,6 @@
       "clock"
     ],
     "modules-right": [
-      "playerctl",
       "executor-power-profile",
       "executor-hypridle",
       "executor-network"
@@ -191,7 +190,7 @@
       "show-icon": true,
       "image-size": 16,
       "show-name": true,
-      "name-length": 50,
+      "name-length": 30,
       "show-empty": false,
       "mark-content": false,
       "show-names": false,
