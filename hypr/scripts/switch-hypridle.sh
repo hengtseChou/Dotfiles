@@ -1,7 +1,7 @@
 #!/bin/bash
 hypridle=$(pgrep -x hypridle)
 if [ -z $hypridle ]; then
-    hypridle
+    hypridle &
 else
     pkill hypridle
 fi

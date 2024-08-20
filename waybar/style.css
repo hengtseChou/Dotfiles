@@ -45,7 +45,7 @@ tooltip label {
 
 #workspaces {
   color: transparent;
-  margin-right: 4px;
+  /* margin-right: 4px; */
   margin-left: 4px;
 }
 #workspaces button {
@@ -95,6 +95,10 @@ tooltip label {
   margin: 0px 10px 0px 0px;
 }
 
+#battery.good {
+  color: rgba(34, 139, 34, 1);
+}
+
 #battery.warning {
   color: rgba(255, 210, 4, 1);
 }
@@ -104,5 +108,9 @@ tooltip label {
 }
 
 #battery.charging {
-  color: rgba(34, 139, 34, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+#custom-media {
+  color: #8968cd;
 }
