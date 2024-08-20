@@ -68,7 +68,7 @@ _installSymLink $HOME/.gtkrc-2.0 $dotfiles/gtk/.gtkrc-2.0 $HOME
 _installSymLink $HOME/.Xresources $dotfiles/gtk/.Xresources $HOME
 _installSymLink $HOME/.zshrc $dotfiles/.zshrc $HOME
 _installSymLink $config/swaync $dotfiles/swaync $config
-_installSymLink $HOME/.config/nwg-panel/config $HOME/Dotfiles/nwg-panel/config $HOME/.config/nwg-panel
+_installSymLink $config/waybar $dotfiles/waybar $config
 
 echo ":: Setting up GTK ..."
 source ./hypr/scripts/reload-gtk.sh >/dev/null
