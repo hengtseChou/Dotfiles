@@ -1,7 +1,7 @@
 #!/bin/bash
 hypridle=$(pgrep -x hypridle)
 if [ -z $hypridle ]; then
-    printf '{"text": "", "alt": "0", "tooltip": "activated", "class": ""}'
+    printf '{"text": "", "alt": "deactivated", "tooltip": "deactivated"}'
 else
-    printf '{"text": "", "alt": "0", "tooltip": "deactivated", "class": ""}'
+    printf '{"text": "", "alt": "activated", "tooltip": "activated"}'
 fi

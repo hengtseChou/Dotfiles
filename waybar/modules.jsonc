@@ -2,7 +2,11 @@
   "hyprland/workspaces": {
     "on-click": "activate",
     "active-only": false,
-    "format": "{}"
+    "format": "{icon}",
+    "format-icons": {
+      "active": " ",
+      "default": " "
+    }
   },
   "custom/media": {
     "format": "{icon} {}",
@@ -19,7 +23,7 @@
   "hyprland/window": {
     "tooltip": "{title}",
     "icon": true,
-    "icon-size": 16,
+    "icon-size": 18,
     "max-length": 70
   },
   "custom/updates": {
@@ -75,35 +79,31 @@
     "on-click": "alacritty --class floating -e nmtui connect"
   },
   "cpu": {
-    "format": "  {usage}%",
-    "on-click": "alacritty -e htop"
+    "format": "  {usage}%"
   },
   "memory": {
-    "format": "  {}%",
-    "on-click": "alacritty -e htop"
+    "format": "  {}%"
   },
   "power-profiles-daemon": {
     "format": "{icon}",
     "tooltip-format": "Power profile: {profile}",
     "tooltip": true,
     "format-icons": {
-      "default": "",
-      "performance": "",
-      "balanced": "",
-      "power-saver": ""
+      "performance": "󰓅",
+      "balanced": "󰾅",
+      "power-saver": "󰾆"
     }
   },
   "custom/hypridle": {
     "format": "{}",
-    "tooltip-format": "{}",
     "escape": true,
     "return-type": "json",
     "exec": "$HOME/Dotfiles/waybar/modules/check-hypridle.sh",
+    "on-click": "$HOME/Dotfiles/hypr/scripts/switch-hypridle.sh",
     "restart-interval": 1
   },
   "clock": {
     "format": "{:%b %d %H:%M}",
-    "on-click": "firefox --new-tab https://calendar.google.com/calendar/u/0/r/month",
     "tooltip-format": "<tt>{calendar}</tt>"
   }
 }
