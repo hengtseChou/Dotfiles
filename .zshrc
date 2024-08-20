@@ -68,7 +68,7 @@ alias zshrc="nano $HOME/.zshrc"
 # PYWAL
 # -----------------------------------------------------
 
-cat $HOME/Dotfiles/.color/sequences
+cat $HOME/Dotfiles/sequences
 
 # -----------------------------------------------------
 # STARSHIP

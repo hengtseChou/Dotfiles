@@ -63,9 +63,9 @@
     },
     "interval": 5,
     "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-plugged": " {capacity}%",
-    "format-icons": [" ", " ", " ", " ", " "]
+    "format-charging": "󰂄 {capacity}%",
+    "format-plugged": "󰂄 {capacity}%",
+    "format-icons": ["󰁻", "󰁽", "󰁿", "󰂁", "󰁹"]
   },
   "network": {
     "format": "{ifname}",

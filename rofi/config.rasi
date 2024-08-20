@@ -12,7 +12,7 @@
 /* ---- Configuration ---- */
 configuration {
     modi:                       "drun,run";
-    font:                       "FiraCode Nerd Font 12";
+    font:                       "Ubuntu Mono Nerd Font 12";
     show-icons:                 true;
     icon-theme:                 "kora";
     display-drun:               "APPS";
@@ -28,7 +28,7 @@ configuration {
 }
 
 /* ---- Load pywal colors (custom wal template) ---- */
-@import "~/Dotfiles/.color/colors-rofi-pywal"
+@import "~/Dotfiles/rofi/colors"
 
 /* ---- Load wallpaper ---- */
 * { current-image: url("/home/hank/Dotfiles/wallpapers/blurred_wallpaper.png", height); }

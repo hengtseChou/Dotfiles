@@ -68,18 +68,16 @@ tooltip label {
   color: @content_main;
 }
 
-#custom-updates,
-#battery,
-#cpu,
+#custom-media,
 #clock,
-#memory,
-#network,
-#backlight,
+#custom-updates,
 #pulseaudio,
-#custom-hypridle,
+#battery,
+#network,
+#cpu,
+#memory,
 #power-profiles-daemon,
-#custom-exit,
-#custom-media {
+#custom-hypridle {
   margin: 0 10px 0 0;
   padding: 2px 2px;
 }
@@ -106,5 +104,5 @@ tooltip label {
 }
 
 #battery.charging {
-  color: rgba(217, 216, 216, 1);
+  color: rgba(34, 139, 34, 1);
 }
