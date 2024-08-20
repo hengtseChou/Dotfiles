@@ -1,0 +1,109 @@
+{
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "active-only": false,
+    "format": "{}"
+  },
+  "custom/media": {
+    "format": "{icon} {}",
+    "escape": true,
+    "return-type": "json",
+    "max-length": 40,
+    "on-click": "playerctl play-pause",
+    "on-click-right": "playerctl stop",
+    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+    "on-scroll-up": "playerctl previous",
+    "on-scroll-down": "playerctl next",
+    "exec": "$HOME/Dotfiles/waybar/modules/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
+  },
+  "hyprland/window": {
+    "tooltip": "{title}",
+    "icon": true,
+    "icon-size": 16,
+    "max-length": 70
+  },
+  "custom/updates": {
+    "format": "  {}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "$HOME/Dotfiles/scripts/countupdates.sh",
+    "restart-interval": 60,
+    "on-click": "alacritty --class floating -e $HOME/Dotfiles/scripts/installupdates.sh",
+    "tooltip": false
+  },
+  "pulseaudio": {
+    "format": "{icon} ",
+    "format-bluetooth": "{icon} ",
+    "format-muted": " ",
+    "format-icons": {
+      "alsa_output.pci-0000_00_1f.3.analog-stereo": "",
+      "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "",
+      "headphone": "",
+      "hands-free": "",
+      "headset": "",
+      "phone": "",
+      "phone-muted": "",
+      "portable": "",
+      "car": "",
+      "default": ["", ""]
+    },
+    "scroll-step": 1,
+    "ignored-sinks": ["Easy Effects Sink"]
+  },
+  "battery": {
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 15
+    },
+    "interval": 5,
+    "format": "{icon} {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": [" ", " ", " ", " ", " "]
+  },
+  "network": {
+    "format": "{ifname}",
+    "format-wifi": "  {essid}",
+    "format-ethernet": "󰈀  {ifname}",
+    "format-disconnected": "Disconnected",
+    "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+    "tooltip-format-ethernet": "󰈀  {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+    "tooltip-format-disconnected": "Disconnected",
+    "max-length": 50,
+    "on-click": "alacritty --class floating -e nmtui connect"
+  },
+  "cpu": {
+    "format": "  {usage}%",
+    "on-click": "alacritty -e htop"
+  },
+  "memory": {
+    "format": "  {}%",
+    "on-click": "alacritty -e htop"
+  },
+  "power-profiles-daemon": {
+    "format": "{icon}",
+    "tooltip-format": "Power profile: {profile}",
+    "tooltip": true,
+    "format-icons": {
+      "default": "",
+      "performance": "",
+      "balanced": "",
+      "power-saver": ""
+    }
+  },
+  "custom/hypridle": {
+    "format": "{}",
+    "tooltip-format": "{}",
+    "escape": true,
+    "return-type": "json",
+    "exec": "$HOME/Dotfiles/waybar/modules/check-hypridle.sh",
+    "restart-interval": 1
+  },
+  "clock": {
+    "format": "{:%b %d %H:%M}",
+    "on-click": "firefox --new-tab https://calendar.google.com/calendar/u/0/r/month",
+    "tooltip-format": "<tt>{calendar}</tt>"
+  }
+}
