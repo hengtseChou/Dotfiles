@@ -9,26 +9,25 @@
     }
   },
   "custom/media": {
-    "format": "{icon} {}",
+    "format": "{}",
+    "tooltip": true,
+    "tooltip-format": "{}",
     "escape": true,
     "return-type": "json",
-    "max-length": 40,
+    "max-length": 50,
     "on-click": "playerctl play-pause",
     "on-click-right": "playerctl stop",
-    "smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
     "on-scroll-up": "playerctl previous",
     "on-scroll-down": "playerctl next",
-    "exec": "$HOME/Dotfiles/waybar/modules/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
+    "exec": "$HOME/Dotfiles/waybar/modules/mediaplayer.py 2> /dev/null"
   },
   "hyprland/window": {
-    "tooltip": "{title}",
     "icon": true,
     "icon-size": 18,
     "max-length": 70
   },
   "custom/updates": {
     "format": "  {}",
-    "tooltip-format": "{}",
     "escape": true,
     "return-type": "json",
     "exec": "$HOME/Dotfiles/scripts/countupdates.sh",
