@@ -13,7 +13,7 @@ export PATH="$HOME/Scripts:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/.npm-global/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
-export PATH="$HOME/Go/bin:$PATH"
+export PATH="$HOME/.go/bin:$PATH"
 export PATH="$HOME/.pyenv/bin:$PATH"
 
 # -----------------------------------------------------
@@ -48,19 +48,14 @@ alias gd="git diff"
 # -----------------------------------------------------
 
 alias e="exit"
-# alias f="nohup nautilus $HOME/nthu-stat &> /dev/null & disown; exit"
 alias search="s -p google"
-alias matrix="cmatrix"
 alias wifi="nmtui connect"
 alias clock="peaclock"
 alias nf="neofetch"
-alias pf="pfetch"
 alias ff="fastfetch"
 alias ls="eza --icons"
 alias ll="eza -l --icons"
 alias lt="eza --tree --level=1 --icons"
-alias update-grub="sudo grub-mkconfig -o /boot/grub/grub.cfg"
-alias pandock="docker run --rm --volume "`pwd`:/data" --user `id -u`:`id -g` pandoc/latex"
 alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 alias zshrc="nano $HOME/.zshrc"
 
@@ -87,7 +82,7 @@ eval "$(zoxide init zsh)"
 # -----------------------------------------------------
 
 eval "$(pyenv init -)"
-export PY3_10="$HOME/.pyenv/versions/3.10.12/bin/python3.10"
+export PY3_10="$HOME/.pyenv/versions/3.10.14/bin/python3.10"
 
 # -----------------------------------------------------
 # MISCS
