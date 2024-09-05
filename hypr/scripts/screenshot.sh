@@ -5,16 +5,12 @@
 #  ___) | (__| | |  __/  __/ | | \__ \ | | | (_) | |_
 # |____/ \___|_|  \___|\___|_| |_|___/_| |_|\___/ \__|
 #
-#
-# by Stephan Raabe (2023)
-# -----------------------------------------------------
-
-DIR="$HOME/Pictures/Screenshots/"
+export HYPRSHOT_DIR="$HOME/Pictures/Screenshots"
 NAME="Screenshot from $(date "+%Y-%m-%d %H-%M-%S").png"
 
-option1="Selected area"
-option2="Fullscreen"
-option3="Fullscreen (delay 3 sec)"
+option1="Selected Area"
+option2="Pick Window"
+option3="Pick Monitor"
 
 options="$option1\n$option2\n$option3"
 
@@ -22,23 +18,15 @@ choice=$(echo -e "$options" | rofi -dmenu -replace -config $HOME/Dotfiles/rofi/c
 
 case $choice in
 $option1)
-    grim -g "$(slurp)" "$DIR$NAME"
-    xclip -selection clipboard -t image/png -i "$DIR$NAME"
-    notify-send "Screenshot created and copied to clipboard" "Mode: $option1"
-    swappy -f "$DIR$NAME"
+    hyprshot -m region -f "$NAME"
     ;;
 $option2)
-    sleep 0.5
-    grim "$DIR$NAME"
-    xclip -selection clipboard -t image/png -i "$DIR$NAME"
-    notify-send "Screenshot created and copied to clipboard" "Mode: $option2"
-    swappy -f "$DIR$NAME"
+    hyprshot -m window -f "$NAME"
     ;;
 $option3)
-    sleep 3
-    grim "$DIR$NAME"
-    xclip -selection clipboard -t image/png -i "$DIR$NAME"
-    notify-send "Screenshot created and copied to clipboard" "Mode: $option3"
-    swappy -f "$DIR$NAME"
+    hyprshot -m output -f "$NAME"
+    ;;
+*)
+    notify-send "Screenshot script" "No option chosen. Screenshot script exited."
     ;;
 esac

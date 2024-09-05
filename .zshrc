@@ -42,6 +42,7 @@ alias gcheck="git checkout"
 alias gb="git branch"
 alias gsw="git switch"
 alias gd="git diff"
+alias gcl="git clone"
 
 # -----------------------------------------------------
 # ALIASES
@@ -58,6 +59,7 @@ alias ll="eza -l --icons"
 alias lt="eza --tree --level=1 --icons"
 alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 alias zshrc="nano $HOME/.zshrc"
+alias dotf="code $HOME/Dotfiles"
 
 # -----------------------------------------------------
 # PYWAL
