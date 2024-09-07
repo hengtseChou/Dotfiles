@@ -52,6 +52,7 @@ alias e="exit"
 alias search="s -p google"
 alias wifi="nmtui connect"
 alias clock="peaclock"
+alias dots="code $HOME/Dotfiles --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime"
 alias nf="neofetch"
 alias ff="fastfetch"
 alias ls="eza --icons"
@@ -59,7 +60,6 @@ alias ll="eza -l --icons"
 alias lt="eza --tree --level=1 --icons"
 alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 alias zshrc="nano $HOME/.zshrc"
-alias dotf="code $HOME/Dotfiles"
 
 # -----------------------------------------------------
 # PYWAL
