@@ -55,11 +55,13 @@ alias clock="peaclock"
 alias dots="code $HOME/Dotfiles --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime"
 alias nf="neofetch"
 alias ff="fastfetch"
-alias ls="eza --icons"
-alias ll="eza -l --icons"
-alias lt="eza --tree --level=1 --icons"
+alias ls="eza --icons --group-directories-first"
+alias ll="eza -l --icons --group-directories-first"
+alias lt="eza --tree --level=1 --icons --group-directories-first"
 alias refresh-mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 alias zshrc="nano $HOME/.zshrc"
+alias inst="sudo pacman -S"
+alias uninst="sudo pacman -Rns"
 
 # -----------------------------------------------------
 # PYWAL
