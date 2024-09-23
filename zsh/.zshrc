@@ -62,8 +62,9 @@ alias lt="eza --tree --level=1 --icons --group-directories-first"
 alias mirrors="rate-mirrors --allow-root --protocol https arch | grep -v '^#' | sudo tee /etc/pacman.d/mirrorlist"
 alias zshrc="nano $HOME/.zshrc"
 alias reload="source $HOME/.zshrc"
-alias inst="sudo pacman -S"
-alias uninst="sudo pacman -Rns"
+alias inst="paru -S"
+alias uninst="paru -Rns"
+alias up="paru"
 
 # -----------------------------------------------------
 # PYWAL

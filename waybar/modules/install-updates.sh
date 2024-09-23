@@ -4,7 +4,7 @@ figlet "Updates"
 echo ""
 sleep 0.1
 
-yay
+paru
 
 notify-send "Update complete"
 echo
