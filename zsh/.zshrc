@@ -54,7 +54,7 @@ alias wifi="nmtui connect"
 alias clock="peaclock"
 alias dots="code $HOME/Dotfiles"
 alias nf="neofetch"
-alias ff="fastfetch"
+alias ff="fastfetch --config $HOME/Dotfiles/fastfetch/config.jsonc"
 alias edit="gnome-text-editor"
 alias ls="eza --icons --group-directories-first"
 alias ll="eza -l --icons --group-directories-first"
@@ -95,4 +95,5 @@ export PY3_10="$HOME/.pyenv/versions/3.10.14/bin/python3.10"
 # MISCS
 # -----------------------------------------------------
 
+export VISUAL=nano
 setopt no_nomatch
