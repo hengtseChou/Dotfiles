@@ -54,7 +54,7 @@ alias wifi="nmtui connect"
 alias clock="peaclock"
 alias dots="code $HOME/Dotfiles"
 alias nf="neofetch"
-alias ff="if [[ $XDG_CURRENT_DESKTOP == "Hyprland" ]]; then fastfetch --config $HOME/Dotfiles/fastfetch/config1.jsonc; elif [[ $XDG_CURRENT_DESKTOP == "GNOME" ]]; then fastfetch --config $HOME/Dotfiles/fastfetch/config2.jsonc; fi"
+alias ff="if [[ $XDG_CURRENT_DESKTOP == 'Hyprland' ]]; then fastfetch --config $HOME/Dotfiles/fastfetch/config1.jsonc; elif [[ $XDG_CURRENT_DESKTOP == 'GNOME' ]]; then fastfetch --config $HOME/Dotfiles/fastfetch/config2.jsonc; fi"
 alias edit="gnome-text-editor"
 alias ls="eza --icons --group-directories-first"
 alias ll="eza -l --icons --group-directories-first"
@@ -97,3 +97,5 @@ export PY3_10="$HOME/.pyenv/versions/3.10.14/bin/python3.10"
 
 export VISUAL=nano
 setopt no_nomatch
+
+export PATH=$PATH:/home/hank/.spicetify

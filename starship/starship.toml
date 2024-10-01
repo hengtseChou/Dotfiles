@@ -47,7 +47,7 @@ symbol = "deno "
 symbol = ".NET "
 
 [directory]
-read_only = " ro"
+read_only = " "
 
 [docker_context]
 symbol = "docker "

@@ -19,104 +19,103 @@
     {
       "type": "os",
       "key": "OS   ",
-      "keyColor": "red"
+      "keyColor": "yellow"
     },
     {
       "type": "kernel",
       "key": " ├  ",
-      "keyColor": "red"
+      "keyColor": "yellow"
     },
     {
       "type": "packages",
       "format": "{} (pacman)",
       "key": " ├ 󰏖 ",
-      "keyColor": "red"
+      "keyColor": "yellow"
     },
     {
       "type": "shell",
       "key": " ├  ",
-      "keyColor": "red"
+      "keyColor": "yellow"
     },
     {
       "type": "uptime",
       "key": " ├ 󱑀 ",
-      "keyColor": "red"
+      "keyColor": "yellow"
     },
     {
       "type": "command",
       "key": " └ 󰃩 ",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
-      "keyColor": "red"
+      "keyColor": "yellow"
     },
     "break",
     {
       "type": "de",
       "key": "DE   ",
-      "keyColor": "green"
+      "keyColor": "blue"
     },
     {
       "type": "wm",
       "key": " ├ 󰣆 ",
-      "keyColor": "green"
+      "keyColor": "blue"
     },
     {
       "type": "lm",
       "key": " ├ 󱅞 ",
-      "keyColor": "green"
+      "keyColor": "blue"
     },
     {
       "type": "theme",
       "key": " ├ 󰏘 ",
-      "keyColor": "green"
+      "keyColor": "blue"
     },
     {
       "type": "icons",
       "key": " ├ 󰀻 ",
-      "keyColor": "green"
+      "keyColor": "blue"
     },
     {
       "type": "terminal",
       "key": " ├  ",
-      "keyColor": "green"
+      "keyColor": "blue"
     },
     "break",
     {
       "type": "host",
       "format": "{2}",
       "key": "PC   ",
-      "keyColor": "yellow"
+      "keyColor": "green"
     },
     {
       "type": "cpu",
       "key": " ├ 󰻠 ",
-      "keyColor": "yellow"
+      "keyColor": "green"
     },
     {
       "type": "gpu",
       "key": " ├ 󰢮 ",
-      "keyColor": "yellow"
+      "keyColor": "green"
     },
     {
       "type": "memory",
       "key": " ├ 󰍛 ",
-      "keyColor": "yellow"
+      "keyColor": "green"
     },
     {
       "type": "disk",
       "key": " ├ 󰋊 ",
-      "keyColor": "yellow"
+      "keyColor": "green"
     },
     {
       "type": "display",
       "key": " ├ 󰍹 ",
-      "keyColor": "yellow",
-      "format": "{1}x{2} @ {3}Hz (as {4}x{5})"
+      "keyColor": "green"
     },
     {
       "type": "battery",
       "key": " └  ",
       "format": "{10}{4} [{5}]",
-      "keyColor": "yellow"
+      "keyColor": "green"
     },
     "break",
     "break"
